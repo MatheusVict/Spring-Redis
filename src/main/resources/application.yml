@@ -9,5 +9,6 @@ spring:
   sql:
     init:
       data-locations: classpath:script.sql
+      mode: always
   jpa:
     show-sql: true
