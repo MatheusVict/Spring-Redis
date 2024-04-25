@@ -6,4 +6,5 @@ import java.util.List;
 
 public interface CompanyService {
     public List<Company> findAll();
+    List<Company> findAllWithCache();
 }

@@ -15,7 +15,13 @@ public class CompanyServiceImpl implements CompanyService {
 
     private CompanyRepository companyRepository;
 
+
     @Cacheable("companies")
+    @Override
+    public List<Company> findAllWithCache() {
+        return this.findAll();
+    }
+
     @Override
     public List<Company> findAll() {
         return (List<Company>) this.companyRepository.findAll();
