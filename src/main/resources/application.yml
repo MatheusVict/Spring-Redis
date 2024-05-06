@@ -12,3 +12,9 @@ spring:
       mode: always
   jpa:
     show-sql: true
+  data:
+    redis:
+      port: 6379
+      host: localhost
+  cache:
+    type: redis
